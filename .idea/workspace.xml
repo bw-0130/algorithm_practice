@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d32b1c3e-70f5-49c0-8871-d2880716a22a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2AJt8Itx50fcEEpb1Lr7Tx3z6G9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3034483" />
+  </component>
+  <component name="RunManager" selected="Application.C01_LongestSumSubArrayLengthInPositiveArray">
+    <configuration name="C01_LongestSumSubArrayLengthInPositiveArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="F25_ArrayThreeQuestion.C01_LongestSumSubArrayLengthInPositiveArray" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="F25_ArrayThreeQuestion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C01_SubsquenceMaxModM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="F24_DataQuantityGuessMethod.C01_SubsquenceMaxModM" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="F24_DataQuantityGuessMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C02_SnacksWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="F24_DataQuantityGuessMethod.C02_SnacksWays" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="F24_DataQuantityGuessMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C03_MSumToN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="F23_FindRuleAndSolution.C03_MSumToN" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="F23_FindRuleAndSolution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C04_MoneyProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="F23_FindRuleAndSolution.C04_MoneyProblem" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="F23_FindRuleAndSolution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.C01_LongestSumSubArrayLengthInPositiveArray" />
+        <item itemvalue="Application.C02_SnacksWays" />
+        <item itemvalue="Application.C01_SubsquenceMaxModM" />
+        <item itemvalue="Application.C04_MoneyProblem" />
+        <item itemvalue="Application.C03_MSumToN" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d32b1c3e-70f5-49c0-8871-d2880716a22a" name="Default Changelist" comment="" />
+      <created>1654739355079</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654739355079</updated>
+      <workItem from="1654739358426" duration="11290000" />
+      <workItem from="1654827024958" duration="6568000" />
+      <workItem from="1655285394181" duration="1707000" />
+      <workItem from="1655368368967" duration="4668000" />
+      <workItem from="1655457787726" duration="2443000" />
+      <workItem from="1655686229204" duration="16123000" />
+      <workItem from="1655773291056" duration="5865000" />
+      <workItem from="1655860026196" duration="5930000" />
+      <workItem from="1655950815646" duration="16405000" />
+      <workItem from="1656034991555" duration="13353000" />
+      <workItem from="1656293367258" duration="10688000" />
+      <workItem from="1656378615346" duration="12966000" />
+      <workItem from="1656465800047" duration="9409000" />
+      <workItem from="1656572556694" duration="4596000" />
+      <workItem from="1656638056126" duration="17127000" />
+      <workItem from="1656912583064" duration="5622000" />
+      <workItem from="1656984385019" duration="10239000" />
+      <workItem from="1657070690735" duration="10285000" />
+      <workItem from="1657156255152" duration="8728000" />
+      <workItem from="1657245723897" duration="10434000" />
+      <workItem from="1657502362848" duration="9937000" />
+      <workItem from="1657591943748" duration="9041000" />
+      <workItem from="1657674768809" duration="14781000" />
+      <workItem from="1657761262911" duration="15310000" />
+      <workItem from="1657847512547" duration="10281000" />
+      <workItem from="1658107962541" duration="10552000" />
+      <workItem from="1658196053241" duration="16620000" />
+      <workItem from="1658282232436" duration="14168000" />
+      <workItem from="1658366497295" duration="9173000" />
+      <workItem from="1658468632719" duration="7505000" />
+      <workItem from="1658735442191" duration="5310000" />
+      <workItem from="1658798928923" duration="8976000" />
+      <workItem from="1658884915595" duration="12183000" />
+      <workItem from="1658978746108" duration="2271000" />
+      <workItem from="1659316493041" duration="1262000" />
+      <workItem from="1659575144019" duration="11336000" />
+      <workItem from="1659951810841" duration="684000" />
+      <workItem from="1660114622071" duration="7409000" />
+      <workItem from="1660183259299" duration="8435000" />
+      <workItem from="1660268130702" duration="12363000" />
+      <workItem from="1660529512117" duration="11405000" />
+      <workItem from="1660619684055" duration="1245000" />
+      <workItem from="1660719230517" duration="2779000" />
+      <workItem from="1660789028331" duration="6420000" />
+      <workItem from="1660875754558" duration="5214000" />
+      <workItem from="1661331296013" duration="1261000" />
+      <workItem from="1661389139594" duration="6331000" />
+      <workItem from="1661493813910" duration="5206000" />
+      <workItem from="1661740489000" duration="10267000" />
+      <workItem from="1661842622530" duration="3237000" />
+      <workItem from="1661916410554" duration="7938000" />
+      <workItem from="1661994180590" duration="8312000" />
+      <workItem from="1662081886885" duration="3361000" />
+      <workItem from="1662520958860" duration="8561000" />
+      <workItem from="1663665755876" duration="1530000" />
+      <workItem from="1663728832092" duration="4415000" />
+      <workItem from="1663814090356" duration="3941000" />
+      <workItem from="1665974660111" duration="2369000" />
+      <workItem from="1666141091340" duration="1250000" />
+      <workItem from="1668394893415" duration="19000" />
+      <workItem from="1668394935133" duration="65000" />
+      <workItem from="1668395071787" duration="1214000" />
+      <workItem from="1668653886071" duration="9456000" />
+      <workItem from="1668999899333" duration="11898000" />
+      <workItem from="1669087570121" duration="1838000" />
+      <workItem from="1670401210621" duration="3580000" />
+      <workItem from="1670483967660" duration="2053000" />
+      <workItem from="1671610470757" duration="2085000" />
+      <workItem from="1671784560769" duration="5054000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2592" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1663666748455">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2592" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1663666748455" />
+    <state x="2685" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1663814804546">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1663814804546" />
+    <state width="1877" height="318" key="GridCell.Tab.0.bottom" timestamp="1671789695902">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695902" />
+    <state width="1877" height="318" key="GridCell.Tab.0.center" timestamp="1671789695901">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695901" />
+    <state width="1877" height="318" key="GridCell.Tab.0.left" timestamp="1671789695901">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695901" />
+    <state width="1877" height="318" key="GridCell.Tab.0.right" timestamp="1671789695901">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695901" />
+    <state x="2460" y="266" key="IDE.errors.dialog" timestamp="1669015270196">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2460" y="266" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1669015270196" />
+    <state x="2500" y="246" width="759" height="548" key="find.popup" timestamp="1663814561090">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2500" y="246" width="759" height="548" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1663814561090" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/F03_dataStructureExercise/T05_doubleLinkImplementStack.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
