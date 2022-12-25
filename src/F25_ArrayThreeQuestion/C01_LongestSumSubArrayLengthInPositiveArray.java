@@ -14,11 +14,12 @@ public class C01_LongestSumSubArrayLengthInPositiveArray {
         }
         int leftWin = 0;
         int rightWin = 0;
-        int sum = 0;
+        int sum = arr[0];
         int len = 0;
         while (rightWin < arr.length){
             if (sum == k){
                 len = Math.max(len, rightWin-leftWin+1);
+                sum -= arr[leftWin++];
             }else if (sum<k){
                 rightWin++;
                 if (rightWin == arr.length){
