@@ -17,7 +17,7 @@ public class C03_LongestLessSumSubArrayLength {
         int[] minSumEnd = new int[arr.length];//以i开头往右扩能获得的最小累加和的有边界下标
         //初始化辅助数组
         minSum[arr.length - 1] = arr[arr.length - 1];
-        minSum[arr.length - 1] = arr.length - 1;
+        minSumEnd[arr.length - 1] = arr.length - 1;
         for (int i = arr.length - 2; i >= 0; i--) {
             if (minSum[i + 1] < 0) {
                 minSum[i] = arr[i] + minSum[i + 1];
@@ -50,21 +50,21 @@ public class C03_LongestLessSumSubArrayLength {
     }
 
     //对数器（暴力解）
-    public static int rightJob(int[] arr, int k) {
-        int[] maxSum = new int[arr.length + 1];
+    public static int maxLength(int[] arr, int k) {
+        int[] h = new int[arr.length + 1];
         int sum = 0;
-        maxSum[0] = sum;
-        for (int i = 0; i < arr.length; i++) {
+        h[0] = sum;
+        for (int i = 0; i != arr.length; i++) {
             sum += arr[i];
-            maxSum[i + 1] = Math.max(sum, maxSum[i]);
+            h[i + 1] = Math.max(sum, h[i]);
         }
-        sum = 0;//重置
+        sum = 0;
         int res = 0;
         int pre = 0;
         int len = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i != arr.length; i++) {
             sum += arr[i];
-            pre = getLessIndex(maxSum, sum - k);
+            pre = getLessIndex(h, sum - k);
             len = pre == -1 ? 0 : i - pre + 1;
             res = Math.max(res, len);
         }
@@ -72,17 +72,17 @@ public class C03_LongestLessSumSubArrayLength {
     }
 
     public static int getLessIndex(int[] arr, int num) {
-        int l = 0;
-        int r = arr.length - 1;
+        int low = 0;
+        int high = arr.length - 1;
         int mid = 0;
         int res = -1;
-        while (l <= r) {
-            mid = (r - l) / 2;
+        while (low <= high) {
+            mid = (low + high) / 2;
             if (arr[mid] >= num) {
                 res = mid;
-                r = mid - 1;
+                high = mid - 1;
             } else {
-                l = mid + 1;
+                low = mid + 1;
             }
         }
         return res;
@@ -103,8 +103,9 @@ public class C03_LongestLessSumSubArrayLength {
         for (int i = 0; i < 200; i++) {
             int[] array = createArray(10, 30);
             int one = jobOne(array, k);
-            int two = rightJob(array, k);
+            int two = maxLength(array, k);
             if (one != two) {
+                System.out.println(one+" "+two);
                 System.out.println("oops!");
             }
         }
