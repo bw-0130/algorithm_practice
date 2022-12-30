@@ -18,7 +18,7 @@ public class C06_RotateMatrix {
     public static void rotateEnge(int[][] matrix, int sr, int sc, int er, int ec) {
         int temp = 0;
         for (int i = 0; i < ec - sc; i++) {
-            temp = matrix[sr][sc+i];
+            temp = matrix[sr][sc+i];//第一个点
             matrix[sr][sc+i] = matrix[er-i][sc];//第二个点
             matrix[er-i][sc] = matrix[er][ec-i];//第三个点
             matrix[er][ec-i] = matrix[sr+i][ec];//第四个点
