@@ -61,19 +61,54 @@ public class C01_CanIWin {
     }
 
     public static boolean processTwo(int choose, int status, int rest) {
-        if (rest<0){
+        if (rest < 0) {
             return false;
         }
         for (int i = 1; i <= choose; i++) {
-            if (((1<<i)&status)==0){//当前位上为0
+            if (((1 << i) & status) == 0) {//当前位上为0
                 //注：不用恢复现场因为int是值传递
                 boolean res = processTwo(choose, (1 << i) | status, rest - i);
-                if (!res){
+                if (!res) {
                     return true;
                 }
             }
         }
         return false;
+    }
+
+    //傻缓存方法
+    public static boolean jobThree(int choose, int total) {
+        if (total == 0) {
+            return true;
+        }
+        if ((choose * (choose + 1) >> 1) < total) {
+            return false;
+        }
+        int status = 0;//二进制0表示未使用过1表示使用过
+        // dp[status] == 1  true
+        // dp[status] == -1  false
+        // dp[status] == 0  process(status) 没算过！去算！
+        int[] dp = new int[1 << (choose + 1)]; //缓存表
+        return processThree(choose, status, total, dp);
+    }
+
+    public static boolean processThree(int chooes, int status, int rest, int[] dp) {
+        if (dp[status] != 0) {
+            return dp[status] == 1 ? true : false;
+        }
+        boolean ans = false;
+        if (rest > 0) {
+            for (int i = 1; i <= chooes; i++) {
+                if (((1 << i) & status) == 0) {
+                    if (!processThree(chooes, (status | (1 << i)), rest - i, dp)) {//后续过程的后手就是当前过程的先手
+                        ans = true;
+                        break;
+                    }
+                }
+            }
+        }
+        dp[status] = ans ? 1 : -1;//加入缓存表
+        return ans;
     }
 
 }
