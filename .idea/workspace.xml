@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d32b1c3e-70f5-49c0-8871-d2880716a22a" name="Default Changelist" comment="" />
+    <list default="true" id="d32b1c3e-70f5-49c0-8871-d2880716a22a" name="Default Changelist" comment="提交代码">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/CS1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/CS2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/CS3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/CS4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/CS5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/CS6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A_One/sort_util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm_practice/F05_mergePractice/T01_smallAndProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm_practice/F05_mergePractice/T01_smallAndProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm_practice/F05_mergePractice/T02_reversedSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm_practice/F05_mergePractice/T02_reversedSequence.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +26,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2AJt8Itx50fcEEpb1Lr7Tx3z6G9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,19 +42,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.3034483" />
   </component>
-  <component name="RunManager" selected="Application.C01_LongestSumSubArrayLengthInPositiveArray">
-    <configuration name="C01_LongestSumSubArrayLengthInPositiveArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="F25_ArrayThreeQuestion.C01_LongestSumSubArrayLengthInPositiveArray" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="A_One" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CS6">
+    <configuration name="CS2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A_One.CS2" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="F25_ArrayThreeQuestion.*" />
+          <option name="PATTERN" value="A_One.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -42,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C01_SubsquenceMaxModM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="F24_DataQuantityGuessMethod.C01_SubsquenceMaxModM" />
+    <configuration name="CS3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A_One.CS3" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="F24_DataQuantityGuessMethod.*" />
+          <option name="PATTERN" value="A_One.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C02_SnacksWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="F24_DataQuantityGuessMethod.C02_SnacksWays" />
+    <configuration name="CS4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A_One.CS4" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="F24_DataQuantityGuessMethod.*" />
+          <option name="PATTERN" value="A_One.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C03_MSumToN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="F23_FindRuleAndSolution.C03_MSumToN" />
+    <configuration name="CS5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A_One.CS5" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="F23_FindRuleAndSolution.*" />
+          <option name="PATTERN" value="A_One.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C04_MoneyProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="F23_FindRuleAndSolution.C04_MoneyProblem" />
+    <configuration name="CS6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A_One.CS6" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="F23_FindRuleAndSolution.*" />
+          <option name="PATTERN" value="A_One.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.C01_LongestSumSubArrayLengthInPositiveArray" />
-        <item itemvalue="Application.C02_SnacksWays" />
-        <item itemvalue="Application.C01_SubsquenceMaxModM" />
-        <item itemvalue="Application.C04_MoneyProblem" />
-        <item itemvalue="Application.C03_MSumToN" />
+        <item itemvalue="Application.CS6" />
+        <item itemvalue="Application.CS5" />
+        <item itemvalue="Application.CS4" />
+        <item itemvalue="Application.CS3" />
+        <item itemvalue="Application.CS2" />
       </list>
     </recent_temporary>
   </component>
@@ -195,45 +222,168 @@
       <workItem from="1670483967660" duration="2053000" />
       <workItem from="1671610470757" duration="2085000" />
       <workItem from="1671784560769" duration="5054000" />
+      <workItem from="1672018060551" duration="6417000" />
+      <workItem from="1672193212047" duration="1190000" />
+      <workItem from="1672218889760" duration="1065000" />
+      <workItem from="1672297430643" duration="8433000" />
+      <workItem from="1672363394494" duration="3080000" />
+      <workItem from="1672370127452" duration="6989000" />
+      <workItem from="1672731127362" duration="4960000" />
+      <workItem from="1672794761185" duration="1976000" />
+      <workItem from="1673923676639" duration="4199000" />
+      <workItem from="1674096913269" duration="4867000" />
+      <workItem from="1674179238506" duration="4508000" />
+      <workItem from="1674196512911" duration="3643000" />
+      <workItem from="1675318053078" duration="860000" />
+      <workItem from="1675325855321" duration="593000" />
+      <workItem from="1675751014288" duration="2134000" />
+      <workItem from="1675818795930" duration="1790000" />
+      <workItem from="1675905569841" duration="10960000" />
+      <workItem from="1676014859057" duration="597000" />
     </task>
+    <task id="LOCAL-00001" summary="数组三联问题 第三问">
+      <created>1672048810821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672048810821</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交代码">
+      <created>1672307947515</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672307947515</updated>
+    </task>
+    <task id="LOCAL-00003" summary="提交代码">
+      <created>1672393303337</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672393303337</updated>
+    </task>
+    <task id="LOCAL-00004" summary="提交代码">
+      <created>1672739394029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672739394029</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交代码">
+      <created>1675751368472</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675751368472</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数组三联问题 第三问" />
+    <MESSAGE value="提交代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交代码" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2592" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1663666748455">
+    <state x="2472" y="182" key="#Notifications" timestamp="1672369965580">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2592" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1663666748455" />
-    <state x="2685" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1663814804546">
+    <state x="2472" y="182" key="#Notifications/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672369965580" />
+    <state x="361" y="71" key="#Project_Structure" timestamp="1675751026358">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675751026358" />
+    <state x="2635" y="228" key="#xdebugger.evaluate" timestamp="1672380337625">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1663814804546" />
-    <state width="1877" height="318" key="GridCell.Tab.0.bottom" timestamp="1671789695902">
+    <state x="2635" y="228" key="#xdebugger.evaluate/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672380337625" />
+    <state x="440" y="13" key="CommitChangelistDialog2" timestamp="1675751359687">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="440" y="13" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675751359687" />
+    <state x="2470" y="118" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1673924107522" />
+    <state x="2258" y="178" key="DiffContextDialog" timestamp="1672739424387">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="318" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695902" />
-    <state width="1877" height="318" key="GridCell.Tab.0.center" timestamp="1671789695901">
+    <state x="2258" y="178" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672739424387" />
+    <state x="2660" y="278" key="FileChooserDialogImpl" timestamp="1674179243663">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="318" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695901" />
-    <state width="1877" height="318" key="GridCell.Tab.0.left" timestamp="1671789695901">
+    <state x="2660" y="278" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1674179243662" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1675935807753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675935807753" />
+    <state width="1877" height="318" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1674201359757" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1675935807752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675935807752" />
+    <state width="1877" height="318" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1674201359757" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1675935807752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675935807752" />
+    <state width="1877" height="318" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1674201359757" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1675935807752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675935807752" />
+    <state width="1877" height="318" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1674201359757" />
+    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1672394418716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="318" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695901" />
-    <state width="1877" height="318" key="GridCell.Tab.0.right" timestamp="1671789695901">
+    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672394418716" />
+    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1672394418716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="318" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1671789695901" />
-    <state x="2460" y="266" key="IDE.errors.dialog" timestamp="1669015270196">
+    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672394418716" />
+    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1672394418716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2460" y="266" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1669015270196" />
-    <state x="2500" y="246" width="759" height="548" key="find.popup" timestamp="1663814561090">
+    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672394418716" />
+    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1672394418716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2500" y="246" width="759" height="548" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1663814561090" />
+    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672394418716" />
+    <state x="2460" y="266" key="IDE.errors.dialog" timestamp="1672300821454">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2460" y="266" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672300821454" />
+    <state x="2621" y="233" key="RollbackChangesDialog" timestamp="1673924060665">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2621" y="233" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1673924060665" />
+    <state x="442" y="193" key="Vcs.Push.Dialog.v2" timestamp="1675751410387">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="442" y="193" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675751410387" />
+    <state x="2472" y="244" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672739484069" />
+    <state x="514" y="255" key="git4idea.merge.GitPullDialog" timestamp="1675751273500">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="514" y="255" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1675751273500" />
+    <state x="2563" y="322" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1673924071939" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1672048314734">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1672048314734" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
