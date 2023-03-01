@@ -1,22 +1,22 @@
-package A_One;
+package A_One.T02;
+
+import A_One.sort_util;
 
 /**
- * 选择排序
+ * 冒泡排序
  */
-public class CS2 {
+public class CS1 {
 
     public static void sortJob(int[] data) {
-        if (data == null || data.length == 0) {
+        if (data == null || data.length < 2) {
             return;
         }
         for (int i = 0; i < data.length; i++) {
-            int minindex = i;
-            for (int j = i + 1; j < data.length; j++) {
-                if (data[minindex]>data[j]){
-                    minindex = j;
+            for (int j = 0; j < data.length - i - 1; j++) {
+                if (data[j]>data[j+1]){
+                    sort_util.swap(data, j, j+1);
                 }
             }
-            sort_util.swap(data,minindex, i);
         }
     }
 

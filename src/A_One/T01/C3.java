@@ -1,4 +1,4 @@
-package A_One;
+package A_One.T01;
 
 /**
  * 怎么把一个int类型的数，提取出最右侧的1来
