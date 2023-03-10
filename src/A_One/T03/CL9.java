@@ -1,4 +1,4 @@
-package A_One;
+package A_One.T03;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -23,7 +23,7 @@ public class CL9 {
             int res = queue.poll();
             Queue<Integer> temp = queue;
             queue = help;
-            queue = temp;
+            help = temp;
             return res;
         }
 
@@ -35,7 +35,7 @@ public class CL9 {
             help.offer(res);
             Queue<Integer> temp = queue;
             queue = help;
-            queue = temp;
+            help = temp;
             return res;
         }
     }

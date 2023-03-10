@@ -1,9 +1,9 @@
-package A_One;
+package A_One.T03;
 
 /**
- * 使用双向链表实现栈
+ * 使用双向链表实现队列
  */
-public class CL5 {
+public class CL4 {
 
     public static class Node{
         public int value;
@@ -15,21 +15,21 @@ public class CL5 {
         }
     }
 
-    //push poll getSize printStack
-    public static class Stack{
+    //自定义队列  push poll getSize
+    public static class queue{
         public Node head;
         public Node end;
         public int size;
 
         public void push(int value){
             Node cur = new Node(value);
-            if (size==0){
+            if (size == 0){
                 head = cur;
                 end = cur;
             }else {
-                end.next = cur;
-                cur.pre = end;
-                end = cur;
+                cur.next = head;
+                head.pre = cur;
+                head = cur;
             }
             size++;
         }
@@ -38,8 +38,8 @@ public class CL5 {
             if (end == null){
                 return null;
             }
-            Node res = end;
             Node pre = end.pre;
+            Node res = end;
             pre.next = null;
             end = pre;
             res.pre = null;
@@ -51,7 +51,7 @@ public class CL5 {
             return size;
         }
 
-        public void printStack(){
+        public void printQueue(){
             Node cur = head;
             while (cur != null){
                 System.out.print(cur.value+" ");
@@ -62,15 +62,15 @@ public class CL5 {
     }
 
     public static void main(String[] args) {
-        Stack stack = new Stack();
-        stack.push(3);
-        stack.push(6);
-        stack.push(7);
-        stack.push(9);
-        stack.printStack();
-        System.out.println(stack.poll().value);
-        System.out.println(stack.poll().value);
-        stack.printStack();
+        queue q = new queue();
+        q.push(2);
+        q.push(3);
+        q.push(4);
+        q.push(5);
+        q.printQueue();
+        System.out.println(q.poll().value);
+        System.out.println(q.poll().value);
+        q.printQueue();
     }
 
 }
