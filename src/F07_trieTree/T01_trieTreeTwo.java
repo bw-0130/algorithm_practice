@@ -96,19 +96,18 @@ public class T01_trieTreeTwo {
             }
             return node.pass;
         }
+    }
 
-        public static void main(String[] args) {
-            T01_trieTreeOne.Tree tree = new T01_trieTreeOne.Tree();
-            tree.insert("abc");
-            tree.insert("abd");
-            tree.insert("abdc");
-            System.out.println(tree.search("abc"));
-            System.out.println(tree.prefixSerach("ab"));
-            System.out.println(tree.prefixSerach("abd"));
-            tree.delete("abd");
-            System.out.println(tree.prefixSerach("abd"));
-        }
-
+    public static void main(String[] args) {
+        T01_trieTreeOne.Tree tree = new T01_trieTreeOne.Tree();
+        tree.insert("abc");
+        tree.insert("abd");
+        tree.insert("abdc");
+        System.out.println(tree.search("abc"));
+        System.out.println(tree.prefixSerach("ab"));
+        System.out.println(tree.prefixSerach("abd"));
+        tree.delete("abd");
+        System.out.println(tree.prefixSerach("abd"));
     }
 
 }

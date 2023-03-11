@@ -1,4 +1,4 @@
-package A_One;
+package A_One.T06;
 
 /**
  * 将单向链表按某值划分成左边小、中间相等、右边大的形式

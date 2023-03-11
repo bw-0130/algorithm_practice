@@ -1,4 +1,4 @@
-package A_One;
+package A_One.T06;
 
 /**
  * 一种特殊的单链表结构，除了next指针外还有一个random指针该指针可能指向链表中的任意一个节点，也可能指向null。
