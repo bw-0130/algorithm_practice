@@ -1,5 +1,6 @@
-package A_One;
+package A_One.T09;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,11 +41,11 @@ public class C5 {
     public static TreeNode tran(List<Node> children) {
         TreeNode head = null;
         TreeNode cur = null;
-        for (Node node : children){
+        for (Node node : children) {
             TreeNode treeNode = new TreeNode(node.value);
-            if (head == null){
+            if (head == null) {
                 head = treeNode;
-            }else {
+            } else {
                 cur.right = treeNode;
             }
             cur = treeNode;
@@ -52,5 +53,27 @@ public class C5 {
         }
         return head;
     }
+
+    //二叉树转多叉树
+    public static Node untransition(TreeNode treeNode) {
+        if (treeNode == null) {
+            return null;
+        }
+        Node node = new Node(treeNode.value);
+        node.children = untran(treeNode.left);
+        return node;
+    }
+
+    public static List<Node> untran(TreeNode treeNode) {
+        List<Node> list = new ArrayList<>();
+        while (treeNode != null){
+            Node node = new Node(treeNode.value);
+            node.children = untran(treeNode.left);
+            list.add(node);
+            treeNode = treeNode.right;
+        }
+        return list;
+    }
+
 
 }
