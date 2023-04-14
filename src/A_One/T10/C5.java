@@ -1,5 +1,4 @@
-package A_One;
-
+package A_One.T10;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -8,10 +7,10 @@ import java.util.List;
 
 /**
  * 图的拓扑排序算法
- * 思路二：
- * 统计每个节点的深度，深度大的一定排在深度小的之前
+ * 思路三：
+ * 统计每个节点后的节点数量，数量多的节点一定排在数量少节点前
  */
-public class C4 {
+public class C5 {
 
     //图节点
     public static class DirectedGraphNode {
@@ -24,53 +23,52 @@ public class C4 {
         }
     }
 
-    //封装节点深度
     public static class Info {
         public DirectedGraphNode node;
-        public int deep;
+        public int NodeNum;
 
-        public Info(DirectedGraphNode node, int deep) {
+        public Info(DirectedGraphNode node, int nodeNum) {
             this.node = node;
-            this.deep = deep;
+            NodeNum = nodeNum;
         }
     }
 
-    public static Info processNodeDeep(DirectedGraphNode node, HashMap<DirectedGraphNode, Info> hashMap) {
-        if (hashMap.containsKey(node)) {
-            return hashMap.get(node);
-        }
-        int deep = 0;
-        for (DirectedGraphNode node1 : node.neighbors){
-            deep = Math.max(deep, processNodeDeep(node1, hashMap).deep);
-        }
-        Info info = new Info(node, deep+1);
-        hashMap.put(node, info);
-        return info;
-    }
-
-    public static class myComparator implements Comparator<Info>{
+    public static class myComparator implements Comparator<Info> {
 
         @Override
         public int compare(Info o1, Info o2) {
-            return o2.deep - o1.deep;
+            return o2.NodeNum - o1.NodeNum;
         }
     }
-
-    public static List<DirectedGraphNode> job(List<DirectedGraphNode> list){
+    
+    public static Info process(DirectedGraphNode node, HashMap<DirectedGraphNode, Info> hashMap){
+        if (hashMap.containsKey(node)){
+            return hashMap.get(node);
+        }
+        int nodeNum = 0;
+        for (DirectedGraphNode node1 : node.neighbors){
+            nodeNum += process(node1, hashMap).NodeNum;
+        }
+        Info info = new Info(node, nodeNum+1);
+        hashMap.put(node, info);
+        return info;
+    }
+    
+    public static List<DirectedGraphNode> job(List<DirectedGraphNode> data){
         HashMap<DirectedGraphNode, Info> hashMap = new HashMap<>();
-        for (DirectedGraphNode node : list){
-            processNodeDeep(node, hashMap);
+        for (DirectedGraphNode node : data){
+            process(node, hashMap);
         }
-        List<Info> infoList = new ArrayList<>();
+        List<Info> infos = new ArrayList<>();
         for (Info info : hashMap.values()){
-            infoList.add(info);
+            infos.add(info);
         }
-        infoList.sort(new myComparator());
-        List<DirectedGraphNode> res = new ArrayList<>();
-        for (Info info : infoList){
-            res.add(info.node);
+        infos.sort(new myComparator());
+        List<DirectedGraphNode> ress = new ArrayList<>();
+        for (Info info : infos){
+            ress.add(info.node);
         }
-        return res;
+        return ress;
     }
 
     public static void main(String[] args) {
