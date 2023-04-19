@@ -1,46 +1,53 @@
-package A_One;
+package A_One.T13;
 
 /**
  * arr是面值数组，其中的值都是正数且没有重复。再给定一个正数aim。
  * 每个值都认为是一种面值，且认为张数是无限的。
- * 返回组成aim的方法数。
- * 例如：1+1+1+1、1+1+2、2+2 一共就3种方法，所以返回3
+ * 返回组成aim的最少货币数。
  */
-public class C12 {
+public class C16 {
 
     public static int jobOne(int[] arr, int aim) {
-        if (arr == null || arr.length == 0 || aim < 1) {
+        if (arr == null || arr.length == 0 || aim < 0) {
             return 0;
         }
         return process(arr, 0, aim);
     }
 
     public static int process(int[] arr, int index, int rest) {
-        int N = arr.length;
-        if (N == index) {
-            return rest == 0 ? 1 : 0;
+        if (arr.length == index) {
+            return rest == 0 ? 0 : Integer.MAX_VALUE;
         }
-        int way = 0;
+        int res = Integer.MAX_VALUE;
         for (int zhang = 0; zhang * arr[index] <= rest; zhang++) {
-            way += process(arr, index + 1, rest - (zhang * arr[index]));
+            int p1 = process(arr, index + 1, rest - (zhang * arr[index]));
+            if (p1 != Integer.MAX_VALUE) {
+                res = Math.min(res, p1 + zhang);
+            }
         }
-        return way;
+        return res;
     }
 
     public static int jobTwo(int[] arr, int aim) {
-        if (arr == null || arr.length == 0 || aim < 1) {
+        if (arr == null || arr.length == 0 || aim < 0) {
             return 0;
         }
         int N = arr.length;
         int[][] dpMap = new int[N + 1][aim + 1];
-        dpMap[N][0] = 1;
+        dpMap[N][0] = 0;
+        for (int i = 1; i <= aim; i++) {
+            dpMap[N][i] = Integer.MAX_VALUE;
+        }
         for (int i = N - 1; i >= 0; i--) {
             for (int j = 0; j <= aim; j++) {
-                int way = 0;
+                int res = Integer.MAX_VALUE;
                 for (int zhang = 0; zhang * arr[i] <= j; zhang++) {
-                    way += dpMap[i + 1][j - (zhang * arr[i])];
+                    int p1 = dpMap[i + 1][j - (zhang * arr[i])];
+                    if (p1 != Integer.MAX_VALUE) {
+                        res = Math.min(res, p1 + zhang);
+                    }
                 }
-                dpMap[i][j] = way;
+                dpMap[i][j] = res;
             }
         }
         return dpMap[0][aim];
@@ -48,17 +55,20 @@ public class C12 {
 
     //斜率优化
     public static int jobThree(int[] arr, int aim) {
-        if (arr == null || arr.length == 0 || aim < 1) {
+        if (arr == null || arr.length == 0 || aim < 0) {
             return 0;
         }
         int N = arr.length;
         int[][] dpMap = new int[N + 1][aim + 1];
-        dpMap[N][0] = 1;
+        dpMap[N][0] = 0;
+        for (int i = 1; i <= aim; i++) {
+            dpMap[N][i] = Integer.MAX_VALUE;
+        }
         for (int i = N - 1; i >= 0; i--) {
             for (int j = 0; j <= aim; j++) {
-                dpMap[i][j] = dpMap[i+1][j];
-                if (j-arr[i]>=0){
-                    dpMap[i][j] += dpMap[i][j-arr[i]];
+                dpMap[i][j] = dpMap[i + 1][j];
+                if (j - arr[i] >= 0 && dpMap[i][j - arr[i]] != Integer.MAX_VALUE) {
+                    dpMap[i][j] = Math.min(dpMap[i][j], dpMap[i][j - arr[i]] + 1);
                 }
             }
         }
@@ -66,8 +76,8 @@ public class C12 {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 2};
-        int aim = 4;
+        int[] arr = {1, 2, 3, 4, 5};
+        int aim = 6;
         System.out.println(jobOne(arr, aim));
         System.out.println(jobTwo(arr, aim));
         System.out.println(jobThree(arr, aim));
