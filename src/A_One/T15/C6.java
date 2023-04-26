@@ -1,0 +1,70 @@
+package A_One.T15;
+
+/**
+ * 给定一个数组arr，
+ * 返回所有子数组最小值的累加和
+ * 思路：
+ * 以每一个元素做最小值求出它能构成的子数组，将这个值累加到结果中
+ * 公式：当前元素a，左边第一个比他大的元素l，右边第一个比他大的元素r
+ * 能构成的子数组数量是 （a-l）*（r-a）
+ * 那么以元素a为最小值的子数组的结果是 （a-l）*（r-a）*a
+ * 注意：右边第一比自己小的元素计算时不能包括相等情况，也就是说计算元素r时遇到相等就停止。
+ */
+public class C6 {
+
+    public static int[] getLeftArray(int[] arr) {
+        int size = arr.length;
+        int[] res = new int[size];
+        int[] stack = new int[size];
+        int offSet = -1;
+        for (int i = size - 1; i >= 0; i--) {
+            while (offSet != -1 && arr[stack[offSet]] >= arr[i]) {
+                res[stack[offSet--]] = i;
+            }
+            stack[++offSet] = i;
+        }
+        while (offSet != -1) {
+            res[stack[offSet--]] = -1;
+        }
+        return res;
+    }
+
+    public static int[] getRightArray(int[] arr) {
+        int size = arr.length;
+        int[] res = new int[size];
+        int[] stack = new int[size];
+        int offSet = -1;
+        for (int i = 0; i < size; i++) {
+            while (offSet != -1 && arr[stack[offSet]] > arr[i]) {
+                res[stack[offSet--]] = i;
+            }
+            stack[++offSet] = i;
+        }
+        while (offSet != -1) {
+            res[stack[offSet--]] = size;
+        }
+        return res;
+    }
+
+    public static int job(int[] arr) {
+        int size = arr.length;
+        int[] leftArray = getLeftArray(arr);
+        int[] rightArray = getRightArray(arr);
+        int res = 0;
+        for (int i = 0; i < size; i++) {
+            int data = arr[i];
+            res += (i - leftArray[i]) * (rightArray[i] - i) * data;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        /**
+         * 输入：arr = [3,1,2,4]
+         * 输出：17
+         */
+        int[] arr = {3,1,2,4};
+        System.out.println(job(arr));
+    }
+
+}

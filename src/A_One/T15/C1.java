@@ -1,4 +1,4 @@
-package F15_monotonousStack;
+package A_One.T15;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,40 +7,37 @@ import java.util.Stack;
 /**
  * 给定一个数组，返回数组中每个元素左边比它小的第一个数和右边比它小的第一个数。返回一个二维数组
  */
-public class C01_MonotonousStack {
+public class C1 {
 
-    //没有重复值
-    public static int[][] jobOne(int[] arr){
+    public static int[][] jobOne(int[] arr) {
         int N = arr.length;
         int[][] res = new int[N][2];
         Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < arr.length; i++) {
-            while (!stack.isEmpty() && arr[stack.peek()]>arr[i]){
-                int popIndex = stack.pop();
-                res[popIndex][0] = stack.isEmpty()?-1:stack.peek();
-                res[popIndex][1] = i;
+        for (int i = 0; i < N; i++) {
+            while (!stack.isEmpty() && arr[stack.peek()] > arr[i]) {
+                Integer pop = stack.pop();
+                res[pop][0] = stack.isEmpty() ? -1 : stack.peek();
+                res[pop][1] = i;
             }
             stack.push(i);
         }
-        while (!stack.isEmpty()){
-            int popIndex = stack.pop();
-            res[popIndex][0] = stack.isEmpty()?-1:stack.peek();
-            res[popIndex][1] = -1;
+        while (!stack.isEmpty()) {
+            Integer pop = stack.pop();
+            res[pop][0] = stack.isEmpty() ? -1 : stack.peek();
+            res[pop][1] = -1;
         }
         return res;
     }
 
-    //可以有重复值
-    public static int[][] jobTwo(int[] arr){
+    public static int[][] jobTwo(int[] arr) {
         int N = arr.length;
         int[][] res = new int[N][2];
         Stack<List<Integer>> stack = new Stack<>();
-        for (int i = 0; i < arr.length; i++) {
-            while (!stack.isEmpty() && arr[stack.peek().get(0)]>arr[i]){
-                List<Integer> popIndex = stack.pop();
-                int left = stack.isEmpty()?-1:stack.peek().get(stack.peek().size()-1);
-                for (int data : popIndex){
-                    res[data][0] = left;
+        for (int i = 0; i < N; i++) {
+            while (!stack.isEmpty() && arr[stack.peek().get(0)] > arr[i]) {
+                List<Integer> pop = stack.pop();
+                for (Integer data : pop) {
+                    res[data][0] = stack.isEmpty() ? -1 : stack.peek().get(stack.peek().size() - 1);
                     res[data][1] = i;
                 }
             }
@@ -53,10 +50,9 @@ public class C01_MonotonousStack {
             }
         }
         while (!stack.isEmpty()){
-            List<Integer> popIndex = stack.pop();
-            int left = stack.isEmpty()?-1:stack.peek().get(stack.peek().size()-1);
-            for (int data : popIndex){
-                res[data][0] = left;
+            List<Integer> pop = stack.pop();
+            for(Integer data : pop){
+                res[data][0] = stack.isEmpty() ? -1 : stack.peek().get(stack.peek().size() - 1);
                 res[data][1] = -1;
             }
         }

@@ -26,7 +26,7 @@ public class C02_AllLessNumSubArray {
                     minList.pollLast();
                 }
                 minList.addLast(R);
-                if (arr[maxList.peekFirst()] - arr[minList.peekLast()] > num) {
+                if (arr[maxList.peekFirst()] - arr[minList.peekFirst()] > num) {
                     break;
                 }else {
                     R++;
