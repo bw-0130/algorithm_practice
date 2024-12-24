@@ -21,7 +21,7 @@ public class T07_SuccessorNode {
         }
         //有右子树
         if (head.right != null){
-            return getLeftNode(head);
+            return getLeftNode(head.right);
         }else {//无右子树
             Node parent = head.parent;
             while (parent != null && parent.right == head){
