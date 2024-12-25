@@ -61,8 +61,8 @@ public class T16_maxSubBSTHead {
             }
         }
         //与当前节点有关
-        if (leftInfo == null?true:(leftInfo.maxSubBSTHead == node.left && leftInfo.maxNodeVal<node.value)
-                &&rightInfo == null?true:(rightInfo.maxSubBSTHead == node.right && rightInfo.minNodeVal>node.value)){
+        if ((leftInfo == null?true:(leftInfo.maxSubBSTHead == node.left && leftInfo.maxNodeVal<node.value))
+                &&(rightInfo == null?true:(rightInfo.maxSubBSTHead == node.right && rightInfo.minNodeVal>node.value))){
             maxSubBSTHead = node;
             maxSubBSTNum = (leftInfo==null?0:leftInfo.maxSubBSTNum)+(rightInfo==null?0:rightInfo.maxSubBSTNum)+1;
         }
