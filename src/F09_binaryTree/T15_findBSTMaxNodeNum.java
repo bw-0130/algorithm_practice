@@ -46,12 +46,12 @@ public class T15_findBSTMaxNodeNum {
         int minNodeVal = node.value;//最小节点值
         int nodeNum = 1;//整棵树节点数
         if (leftInfo != null){
-            maxNodeVal = Math.max(maxNodeVal, leftInfo.maxBSTNodeNum);
+            maxNodeVal = Math.max(maxNodeVal, leftInfo.maxNodeVal);
             minNodeVal = Math.min(minNodeVal, leftInfo.minNodeVal);
             nodeNum += leftInfo.nodeNum;
         }
         if (rightInfo != null){
-            maxNodeVal = Math.max(maxNodeVal, rightInfo.maxBSTNodeNum);
+            maxNodeVal = Math.max(maxNodeVal, rightInfo.maxNodeVal);
             minNodeVal = Math.min(minNodeVal, rightInfo.minNodeVal);
             nodeNum += rightInfo.nodeNum;
         }
