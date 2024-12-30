@@ -142,13 +142,13 @@ public class T03_numberOfIslands {
         int rows = matrix.length;
         int cols = matrix[0].length;
         for (int i = 1; i < rows; i++) {
-            if (matrix[0][i] == '1' && matrix[0][i - 1] == '1') {
-                union.union(0, i, 0, i - 1);
+            if (matrix[i][0] == '1' && matrix[i - 1][0] == '1') {
+                union.union(i, 0, i - 1, 0);
             }
         }
         for (int i = 1; i < cols; i++) {
-            if (matrix[i][0] == '1' && matrix[i - 1][0] == '1') {
-                union.union(i, 0, i - 1, 0);
+            if (matrix[0][i] == '1' && matrix[0][i - 1] == '1') {
+                union.union(0, i, 0, i - 1);
             }
         }
         for (int i = 1; i < rows; i++) {
