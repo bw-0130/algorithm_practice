@@ -39,7 +39,7 @@ public class C12_CoinsWayNoLimit {
             for (int j = 0; j <= aim; j++) {
                 int way = 0;
                 for (int zhang = 0; zhang * arr[i] <= j; zhang++) {
-                    way += process(arr, i + 1, (j - zhang * arr[i]));
+                    way += dpMap[i + 1][j - zhang * arr[i]];
                 }
                 dpMap[i][j] = way;
             }
@@ -48,18 +48,18 @@ public class C12_CoinsWayNoLimit {
     }
 
     //动态规划位置获取存在枚举行为需要斜率优化
-    public static int jobThree(int[] arr, int aim){
+    public static int jobThree(int[] arr, int aim) {
         if (arr == null || arr.length == 0 || aim < 1) {
             return 0;
         }
         int N = arr.length;
         int[][] dpMap = new int[N + 1][aim + 1];
         dpMap[N][0] = 1;
-        for (int i = N-1; i >= 0; i--) {
+        for (int i = N - 1; i >= 0; i--) {
             for (int j = 0; j <= aim; j++) {
-                dpMap[i][j] = dpMap[i+1][j];
-                if (j-arr[i]>=0){
-                    dpMap[i][j] += dpMap[i][j-arr[i]];
+                dpMap[i][j] = dpMap[i + 1][j];
+                if (j - arr[i] >= 0) {
+                    dpMap[i][j] += dpMap[i][j - arr[i]];
                 }
             }
         }
