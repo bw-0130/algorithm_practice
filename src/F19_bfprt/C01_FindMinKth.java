@@ -83,7 +83,7 @@ public class C01_FindMinKth {
     public static int getBfprtPivot(int[] arr, int l, int r) {
         int size = r - l + 1;
         int offset = (size % 5) == 0 ? 0 : 1;
-        int[] list = new int[size + offset];
+        int[] list = new int[size/5 + offset];
         for (int i = 0; i < list.length; i++) {
             int winl = l + (i * 5);
             list[i] = getMid(arr, winl, Math.min(r, winl + 4));
